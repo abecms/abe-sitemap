@@ -26,7 +26,7 @@ function createXml(list, domain, priorities) {
 			var newdate = year + "-" + ((month < 10) ? "0" + month : month) + "-" + ((day < 10) ? "0" + day : day);
 
 			var priority = "0.5";
-			if(typeof priorities[file.abe_meta.template] !== 'undefined' && priorities[file.abe_meta.template] !== null) {
+			if(priorities && typeof priorities[file.abe_meta.template] !== 'undefined' && priorities[file.abe_meta.template] !== null) {
 				priority = priorities[file.abe_meta.template];
 			}
 
